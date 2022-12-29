@@ -10,4 +10,4 @@ adult = [s_w for s_w in S_W if s_w[1] > minors_max]
 
 
 print(Counter(children))
-print(Counter(children))
+print(Counter(adult))
