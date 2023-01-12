@@ -1,6 +1,5 @@
 N,K = map(int,input().split())
-if K == 1:
+if N%K == 0:
+    print(1)
+else:
     print(0)
-    exit()
-    
-print(N%K)

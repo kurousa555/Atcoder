@@ -1,0 +1,5 @@
+K = int(input())
+A,B = input().split()
+AK = int(A,K)
+BK = int(B,K)
+print(AK*BK)
