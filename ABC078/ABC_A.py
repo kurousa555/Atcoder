@@ -1,0 +1,6 @@
+X,Y = input().split()
+X=int(X.lower(),base=16)
+Y=int(Y.lower(),base=16)
+if X==Y:print("=")
+if X<Y:print("<")
+if X>Y:print(">")

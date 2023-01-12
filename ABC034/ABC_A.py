@@ -1,5 +1,3 @@
-n = int(input())
-if n%2 == 0:
-    print(n-1)
-if n%2 == 1:
-    print(n+1)    
+x,y = map(int,input().split())
+if y>x:print("Better")
+else:print("Worse")

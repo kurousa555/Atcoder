@@ -1,0 +1,7 @@
+L,R = map(int,input().split())
+S = input()
+print(S[:L-1]+S[L-1:R][::-1]+S[R:])
+# if len(S[:L-1])!=0:print(S[:L-1],end="")
+# if len(S[L-1:R][::-1])!=0:print(S[L-1:R][::-1],end="")
+# if len(S[R])!=0:print(S[R],end="")
+# print()
