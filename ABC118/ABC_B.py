@@ -1,23 +1,19 @@
+from collections import defaultdict
 N,M = map(int,input().split())
-minor   = -1000000
-maximum =  1000000
-nums = []
+foods = defaultdict(list)
 for i in range(N):
-    get = list(map(int,input().split()))
-    A = sorted(get[1:])
-    A = [a for a in A if minor<=a<=maximum]
-    if len(A)==0:
-        print(0)
-        exit()
+    KA = list(map(int,input().split()))
+    K = KA[0]
+    A = KA[1:]
+    for j in range(K):
+        foods[A[j]].append(1)
 
-    if A[0] > minor:minor=A[0]
-    if A[-1] < maximum:maximum=A[-1]  
-    nums.append(A)
+ans = 0
+for i in foods.keys():
+    if len(foods[i]) == N:
+        ans += 1
 
-len_list = []
-for i in range(N):
-    nums[i] = [a for a in nums[i] if minor<=a<=maximum]
-    len_list.append(len(nums[i]))
-
-print(min(len_list))
+print(ans)
+        
+    
 
