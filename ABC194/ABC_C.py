@@ -10,6 +10,7 @@ for x in range(-200, 201):
         cx = cnt[x]
         cy = cnt[y]
         # print(cx,cy)
+        # print(x,cx,y,cy)
         ans += cx * cy * (x - y) ** 2
 
 print(ans)

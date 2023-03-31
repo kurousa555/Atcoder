@@ -1,16 +1,43 @@
 {
 	"数値複数受け取り": {
-		"prefix": "map(int,input().split())",
-		"body": "map(int,input().split())"
+		"prefix": "map(int,stdin.readline().split())",
+		"body": "map(int,stdin.readline().split())"
 	},
+	"func作成": {
+		"prefix": "def func",
+		"body": ["from sys import stdin",
+				"def func():",
+				"",
+				"    print()",
+				"    return",
+				"func()"
+				]
+	},	
 	"8方向探査": {
 		"prefix": "hatihoukou",
 		"body": "dy = [1, 0, -1, 0, 1, -1, 1, -1]\ndx = [0, 1, 0, -1, 1, 1, -1, -1]"
 	},
-	"二次元配列受け取り": {
-		"prefix": "[list(map(int,input().split())) for _ in range(N)]",
-		"body": "[list(map(int,input().split())) for _ in range(N)]",
+	"stdin": {
+		"prefix": "stdin",
+		"body": "from sys import stdin"
 	},
+
+	"二次元配列受け取り": {
+		"prefix": "[list(map(int,stdin.readline().split())) for _ in range(N)]",
+		"body": "[list(map(int,stdin.readline().split())) for _ in range(N)]",
+	},
+	
+	"gcd関数": {
+		"prefix": "gcd",
+		"body": [
+			"def gcd_l(list_g2):",
+			"   for i in reversed(range(1, min(list_g2)+1)):",
+			"      if any([j % i for j in list_g2]) == False:",
+			"         return i",
+			"print(gcd_l([]))",
+				]
+	},
+
 	"転置": {
 		"prefix": "tenti",
 		"body": "l_2d_t = [list(x) for x in zip(*l_2d)]",
@@ -19,7 +46,10 @@
 		"prefix": "judge",
 		"body": "print('Yes' if judge() else 'No')",
 	},
-
+	"itertools": {
+		"prefix": "itertools",
+		"body": "import itertools",
+	},
 	
 
 	
