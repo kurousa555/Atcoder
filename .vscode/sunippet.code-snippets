@@ -44,7 +44,7 @@
 	},
 	"判定": {
 		"prefix": "judge",
-		"body": "print('Yes' if judge() else 'No')",
+		"body": "print('Yes' if func() else 'No')",
 	},
 	"itertools": {
 		"prefix": "itertools",
